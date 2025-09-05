@@ -1,0 +1,10 @@
+release/dialog1.o
+release/dialog2.o
+release/main.o
+release/mainwindow.o
+release/players.o
+release/qrc_icon.o
+release/moc_dialog1.o
+release/moc_dialog2.o
+release/moc_mainwindow.o
+release/moc_players.o
