@@ -178,12 +178,12 @@ void Players::on_pushButton_3_clicked()
     QFile file("Names.txt");
     if (file.open(QIODevice::WriteOnly | QIODevice::Append | QIODevice::Text)) {
         QTextStream out(&file);
-        out << "\nБЫЛА АЧЫСТКА"<<"\n";
+        out << "БЫЛА АЧЫСТКА\n";
     }
     QFile file1("Stat.txt");
         if (file1.open(QIODevice::WriteOnly | QIODevice::Append | QIODevice::Text)) {
             QTextStream out(&file1);
-            out << "\nБЫЛА АЧЫСТКА"<<"\n";
+            out << "БЫЛА АЧЫСТКА\n";
         }
 }
 

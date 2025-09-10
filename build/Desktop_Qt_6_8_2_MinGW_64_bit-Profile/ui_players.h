@@ -31,6 +31,7 @@ public:
         if (Players->objectName().isEmpty())
             Players->setObjectName("Players");
         Players->resize(800, 600);
+        Players->setStyleSheet(QString::fromUtf8("background-color: rgb(246, 239, 226);"));
         pushButton = new QPushButton(Players);
         pushButton->setObjectName("pushButton");
         pushButton->setGeometry(QRect(680, 540, 93, 29));

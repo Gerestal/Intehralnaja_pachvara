@@ -38,10 +38,8 @@ struct qt_meta_tag_ZN7Dialog1E_t {};
 #ifdef QT_MOC_HAS_STRINGDATA
 static constexpr auto qt_meta_stringdata_ZN7Dialog1E = QtMocHelpers::stringData(
     "Dialog1",
-    "nameEntered",
-    "",
-    "name",
     "on_exitButton_clicked",
+    "",
     "on_startButton_clicked"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
@@ -54,22 +52,16 @@ Q_CONSTINIT static const uint qt_meta_data_ZN7Dialog1E[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       3,   14, // methods
+       2,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       1,       // signalCount
-
- // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    1,   32,    2, 0x06,    1 /* Public */,
+       0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       4,    0,   35,    2, 0x08,    3 /* Private */,
-       5,    0,   36,    2, 0x08,    4 /* Private */,
-
- // signals: parameters
-    QMetaType::Void, QMetaType::QString,    3,
+       1,    0,   26,    2, 0x08,    1 /* Private */,
+       3,    0,   27,    2, 0x08,    2 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
@@ -87,9 +79,6 @@ Q_CONSTINIT const QMetaObject Dialog1::staticMetaObject = { {
     qt_incomplete_metaTypeArray<qt_meta_tag_ZN7Dialog1E_t,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<Dialog1, std::true_type>,
-        // method 'nameEntered'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
         // method 'on_exitButton_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_startButton_clicked'
@@ -103,22 +92,12 @@ void Dialog1::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
     auto *_t = static_cast<Dialog1 *>(_o);
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: _t->nameEntered((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 1: _t->on_exitButton_clicked(); break;
-        case 2: _t->on_startButton_clicked(); break;
+        case 0: _t->on_exitButton_clicked(); break;
+        case 1: _t->on_startButton_clicked(); break;
         default: ;
         }
     }
-    if (_c == QMetaObject::IndexOfMethod) {
-        int *result = reinterpret_cast<int *>(_a[0]);
-        {
-            using _q_method_type = void (Dialog1::*)(const QString & );
-            if (_q_method_type _q_method = &Dialog1::nameEntered; *reinterpret_cast<_q_method_type *>(_a[1]) == _q_method) {
-                *result = 0;
-                return;
-            }
-        }
-    }
+    (void)_a;
 }
 
 const QMetaObject *Dialog1::metaObject() const
@@ -140,22 +119,15 @@ int Dialog1::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 3)
+        if (_id < 2)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 3;
+        _id -= 2;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 3)
+        if (_id < 2)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 3;
+        _id -= 2;
     }
     return _id;
-}
-
-// SIGNAL 0
-void Dialog1::nameEntered(const QString & _t1)
-{
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
-    QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 QT_WARNING_POP

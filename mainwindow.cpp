@@ -176,7 +176,7 @@ void MainWindow::handleImageClick()
                 QTextStream in(&file);
                 QStringList lines;
                 while (!in.atEnd()) {
-                    lines << in.readLine();  // сохраняем строку с любыми пробелами
+                    lines << in.readLine();
                 }
                 file.close();
 
@@ -185,7 +185,7 @@ void MainWindow::handleImageClick()
                     return;
                 }
 
-                // 2) Находим индекс последней непустой строки
+
                 int idx = lines.size() - 1;
                 while (idx >= 0 && lines.at(idx).trimmed().isEmpty()) {
                     --idx;
@@ -195,22 +195,22 @@ void MainWindow::handleImageClick()
                     return;
                 }
 
-                // 3) Проверяем маркер и определяем, что дублировать
+
                 const QString marker = QStringLiteral("БЫЛА АЧЫСТКА");
                 QString lineToCopy;
                 if (lines.at(idx).trimmed() == marker) {
-                    // маркер на последней непустой строке → дублируем строку выше
+
                     if (idx - 1 < 0) {
                         qWarning() << "Нет строки перед маркером для копирования";
                         return;
                     }
                     lineToCopy = lines.at(idx - 1);
                 } else {
-                    // маркер не найден в конце → дублируем самую последнюю непустую строку
+
                     lineToCopy = lines.at(idx);
                 }
 
-                // 4) Открываем файл в режиме Append и пишем выбранную строку
+
                 if (!file.open(QIODevice::WriteOnly | QIODevice::Append | QIODevice::Text)) {
                     qWarning() << "Не удалось открыть файл для записи:";
                     return;

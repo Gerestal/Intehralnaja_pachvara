@@ -24,7 +24,7 @@ class Ui_Dialog2
 {
 public:
     QLabel *label_2;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QHBoxLayout *horizontalLayout;
     QPushButton *menuButton;
     QPushButton *PButton;
@@ -38,32 +38,33 @@ public:
         QIcon icon;
         icon.addFile(QString::fromUtf8("Integral2.png"), QSize(), QIcon::Mode::Normal, QIcon::State::Off);
         Dialog2->setWindowIcon(icon);
+        Dialog2->setStyleSheet(QString::fromUtf8("background-color: rgb(246, 239, 226);"));
         label_2 = new QLabel(Dialog2);
         label_2->setObjectName("label_2");
         label_2->setGeometry(QRect(30, 80, 431, 81));
         label_2->setStyleSheet(QString::fromUtf8("color: rgb(255, 147, 196);\n"
 "font: 20pt \"SimSun-ExtB\";"));
-        widget = new QWidget(Dialog2);
-        widget->setObjectName("widget");
-        widget->setGeometry(QRect(30, 230, 431, 51));
-        horizontalLayout = new QHBoxLayout(widget);
+        layoutWidget = new QWidget(Dialog2);
+        layoutWidget->setObjectName("layoutWidget");
+        layoutWidget->setGeometry(QRect(30, 230, 431, 51));
+        horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setObjectName("horizontalLayout");
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        menuButton = new QPushButton(widget);
+        menuButton = new QPushButton(layoutWidget);
         menuButton->setObjectName("menuButton");
         menuButton->setStyleSheet(QString::fromUtf8("color: rgb(255, 147, 196);\n"
 "font: 12pt \"SimSun\";"));
 
         horizontalLayout->addWidget(menuButton);
 
-        PButton = new QPushButton(widget);
+        PButton = new QPushButton(layoutWidget);
         PButton->setObjectName("PButton");
         PButton->setStyleSheet(QString::fromUtf8("color: rgb(255, 147, 196);\n"
 "font: 12pt \"SimSun\";"));
 
         horizontalLayout->addWidget(PButton);
 
-        repeatButton = new QPushButton(widget);
+        repeatButton = new QPushButton(layoutWidget);
         repeatButton->setObjectName("repeatButton");
         repeatButton->setStyleSheet(QString::fromUtf8("color: rgb(255, 147, 196);\n"
 "font: 12pt \"SimSun\";"));

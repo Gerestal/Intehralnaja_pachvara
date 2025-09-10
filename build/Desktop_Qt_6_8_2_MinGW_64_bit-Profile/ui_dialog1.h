@@ -39,6 +39,11 @@ public:
         QIcon icon;
         icon.addFile(QString::fromUtf8("Integral2.png"), QSize(), QIcon::Mode::Normal, QIcon::State::Off);
         Dialog1->setWindowIcon(icon);
+        Dialog1->setStyleSheet(QString::fromUtf8("\n"
+"color: rgb(255, 255, 255);\n"
+"background-color: rgb(246, 239, 226);\n"
+"border-color: rgb(255, 242, 208);\n"
+""));
         startButton = new QPushButton(Dialog1);
         startButton->setObjectName("startButton");
         startButton->setGeometry(QRect(330, 290, 121, 41));

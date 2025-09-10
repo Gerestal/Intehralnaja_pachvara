@@ -72,7 +72,9 @@ OBJECTS       = debug/dialog1.o \
 
 DIST          = Demidovich.png \
 		Integral1.png \
-		Result1.png ..\..\dialog1.h \
+		Result1.png \
+		back1.jpg \
+		back2.jpg ..\..\dialog1.h \
 		..\..\dialog2.h \
 		..\..\mainwindow.h \
 		..\..\players.h ..\..\dialog1.cpp \
@@ -531,6 +533,8 @@ debug/moc_dialog2.cpp: ../../dialog2.h \
 		C:/Qt/6.8.2/mingw_64/include/QtCore/qlocale.h \
 		C:/Qt/6.8.2/mingw_64/include/QtGui/qguiapplication_platform.h \
 		../../players.h \
+		C:/Qt/6.8.2/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.8.2/mingw_64/include/QtWidgets/qabstractbutton.h \
 		C:/Qt/6.8.2/mingw_64/include/QtNetwork/QTcpSocket \
 		C:/Qt/6.8.2/mingw_64/include/QtNetwork/qtcpsocket.h \
 		C:/Qt/6.8.2/mingw_64/include/QtNetwork/qtnetworkglobal.h \
@@ -746,6 +750,8 @@ debug/moc_mainwindow.cpp: ../../mainwindow.h \
 		C:/Qt/6.8.2/mingw_64/include/QtWidgets/QDialog \
 		C:/Qt/6.8.2/mingw_64/include/QtWidgets/qdialog.h \
 		../../players.h \
+		C:/Qt/6.8.2/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.8.2/mingw_64/include/QtWidgets/qabstractbutton.h \
 		C:/Qt/6.8.2/mingw_64/include/QtNetwork/QTcpSocket \
 		C:/Qt/6.8.2/mingw_64/include/QtNetwork/qtcpsocket.h \
 		C:/Qt/6.8.2/mingw_64/include/QtNetwork/qtnetworkglobal.h \
@@ -1434,6 +1440,8 @@ debug/dialog2.o: ../../dialog2.cpp ../../dialog2.h \
 		C:/Qt/6.8.2/mingw_64/include/QtCore/qlocale.h \
 		C:/Qt/6.8.2/mingw_64/include/QtGui/qguiapplication_platform.h \
 		../../players.h \
+		C:/Qt/6.8.2/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.8.2/mingw_64/include/QtWidgets/qabstractbutton.h \
 		C:/Qt/6.8.2/mingw_64/include/QtNetwork/QTcpSocket \
 		C:/Qt/6.8.2/mingw_64/include/QtNetwork/qtcpsocket.h \
 		C:/Qt/6.8.2/mingw_64/include/QtNetwork/qtnetworkglobal.h \
@@ -1457,8 +1465,6 @@ debug/dialog2.o: ../../dialog2.cpp ../../dialog2.h \
 		C:/Qt/6.8.2/mingw_64/include/QtGui/qpicture.h \
 		C:/Qt/6.8.2/mingw_64/include/QtGui/qtextdocument.h \
 		C:/Qt/6.8.2/mingw_64/include/QtWidgets/QPushButton \
-		C:/Qt/6.8.2/mingw_64/include/QtWidgets/qpushbutton.h \
-		C:/Qt/6.8.2/mingw_64/include/QtWidgets/qabstractbutton.h \
 		C:/Qt/6.8.2/mingw_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\dialog2.o ..\..\dialog2.cpp
 
@@ -1868,6 +1874,8 @@ debug/mainwindow.o: ../../mainwindow.cpp ../../mainwindow.h \
 		C:/Qt/6.8.2/mingw_64/include/QtWidgets/QDialog \
 		C:/Qt/6.8.2/mingw_64/include/QtWidgets/qdialog.h \
 		../../players.h \
+		C:/Qt/6.8.2/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.8.2/mingw_64/include/QtWidgets/qabstractbutton.h \
 		C:/Qt/6.8.2/mingw_64/include/QtNetwork/QTcpSocket \
 		C:/Qt/6.8.2/mingw_64/include/QtNetwork/qtcpsocket.h \
 		C:/Qt/6.8.2/mingw_64/include/QtNetwork/qtnetworkglobal.h \
@@ -1891,8 +1899,6 @@ debug/mainwindow.o: ../../mainwindow.cpp ../../mainwindow.h \
 		C:/Qt/6.8.2/mingw_64/include/QtWidgets/QProgressBar \
 		C:/Qt/6.8.2/mingw_64/include/QtWidgets/qprogressbar.h \
 		C:/Qt/6.8.2/mingw_64/include/QtWidgets/QPushButton \
-		C:/Qt/6.8.2/mingw_64/include/QtWidgets/qpushbutton.h \
-		C:/Qt/6.8.2/mingw_64/include/QtWidgets/qabstractbutton.h \
 		C:/Qt/6.8.2/mingw_64/include/QtWidgets/QWidget \
 		C:/Qt/6.8.2/mingw_64/include/QtCore/QRandomGenerator \
 		C:/Qt/6.8.2/mingw_64/include/QtCore/qrandom.h \
