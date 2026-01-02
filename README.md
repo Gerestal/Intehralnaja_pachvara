@@ -19,9 +19,18 @@
 
 ### Требования
 
-* **Qt** версии 6.x или выше
+* **Qt** версии 6.8.2 или выше
 * **Компилятор C++** с поддержкой C++17
-* 
+* **CMake** 3.16+
+
+# Клонирование репозитория
+git clone https://github.com/Gerestal/Intehralnaja_pachvara.git
+
+# Сборка с помощью CMake
+mkdir build
+cd build
+cmake ..
+cmake --build .
 
 ## 🎮 Управление
 
