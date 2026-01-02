@@ -55,16 +55,13 @@
     ├── 🖼️ `Demidovich.png`  
     ├── 🖼️ `Integral1.png`  
     └── 🖼️ `Result1.png`  
-```
 
-
-## 👥 Разработчики
+##  👥 Разработчики
 
 * [Kseniya Maslenchenko](https://github.com/Gerestal)
 * [K.A. Zubovich](https://bsu.by/employee/40443-d) - автор идеи в рамках практических занятий в университете.
 
 Мы приветствуем вклад в проект! Пожалуйста:
-
 1. Форкните репозиторий
 2. Создайте ветку для вашей функции (`git checkout -b feature/amazing-feature`)
 3. Зафиксируйте изменения (`git commit -m 'Add some amazing feature'`)
@@ -72,7 +69,6 @@
 5. Откройте Pull Request
 
 ## 📞 Контакты и обратная связь
-
 Если у вас есть вопросы или предложения пишите на fpm.maslench@bsu.by
 
 ---
