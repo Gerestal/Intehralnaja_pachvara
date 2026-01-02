@@ -23,10 +23,10 @@
 * **Компилятор C++** с поддержкой C++17
 * **CMake** 3.16+
 
-# Клонирование репозитория
+### Клонирование репозитория
 git clone https://github.com/Gerestal/Intehralnaja_pachvara.git
 
-# Сборка с помощью CMake
+### Сборка с помощью CMake
 mkdir build
 cd build
 cmake ..
